@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Reactive Form Test</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form" (ngSubmit)="onSave()">
+
+    <!-- Description -->
+    <ion-item lines="none">
+      <ion-label> Add a description </ion-label>
+      <ion-input type="text" placeholder="Enter your text here..." formControlName="description">
+      </ion-input>
+    </ion-item>
+
+
+    <!-- More options -->
+    <ion-item lines="none">
+      <ion-label class="ionLabel"> Check for more options </ion-label>
+      <!-- <ion-toggle  [(ngModel)]="isChecked" [ngModelOptions]="{standalone: true}"></ion-toggle> -->
+    </ion-item>
+
+    <!-- Save the form -->
+    <ion-button expand="full" fill="outline" type="submit" [disabled]="form.invalid">Validated</ion-button>
+  </form>
+</ion-content>
