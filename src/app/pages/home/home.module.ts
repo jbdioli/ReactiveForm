@@ -12,7 +12,6 @@ import { HomePage } from './home.page';
   imports: [
     CommonModule,
     FormsModule,
-    // ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'}),
     ReactiveFormsModule,
     IonicModule,
     HomePageRoutingModule
