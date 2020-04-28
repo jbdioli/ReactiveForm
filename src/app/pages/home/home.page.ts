@@ -10,6 +10,8 @@ export class HomePage implements OnInit {
 
   form: FormGroup;
 
+  isChecked = false;
+
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
